@@ -1,9 +1,11 @@
 var leapYear = function(year) {
-  if ((year % 4 === 0) && (year % 100 !== 0) || (year % 400 === 0)) {
+  if (year === NaN) {
+    alert("Please, enter a numerical value.");
+  } else if ((year % 4 === 0) && (year % 100 !== 0) || (year % 400 === 0)) {
     return true;
   } else {
-    return false;
-  }
+      return false;
+  };
 };
 
 $(document).ready(function() {
